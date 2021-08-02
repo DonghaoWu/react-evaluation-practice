@@ -1,6 +1,5 @@
 ## Introduction:
 
-
 This code challenge is meant to mimic the type work we do each day as front-end/fullstack developers in the Antra-React division. Everyday, we ask developers such as yourself to take ownership of the implementation and management of front-end features. This requires understanding of front-end architecture, data models, how-the-feature-works-end-2-end, in addition to writing the feature in html/css via React or other technologies.
 
 Through this challenge, we are looking for signals that indicate that you would be able to handle the unique and interesting engineering challenges we have that take more than just writing of front-end code to fit a UI mock.
@@ -34,6 +33,24 @@ When you are done, the hiring team should be able to get your code up and runnin
 - then run -> npm install
 - then run -> npm run dev:server
 - then run -> npm run dev:client
+
+---
+
+<p align="center">
+    <img src="./UI-mock.png" width=90%>
+</p>
+
+---
+
+<p align="center">
+    <img src="./UI-mock2.png" width=90%>
+</p>
+
+---
+
+<p align="center">
+    <img src="./UI-mock3.png" width=90%>
+</p>
 
 ---
 
