@@ -11,7 +11,10 @@ const SelectOptions = () => {
   }, []);
 
   const handleChange = async (e) => {
-    if (e.target.value === 'Select') return;
+    if (e.target.value === 'Select') {
+      setSelectedHobby([]);
+      return;
+    }
     const res = await axios.post('/users/age', {
       hobbyToLookup: e.target.value,
     });
@@ -20,9 +23,10 @@ const SelectOptions = () => {
   };
 
   return (
-    <div>
+    <div className="sub-component">
+      <h2>Age Demographic of Users with hobby</h2>
       {hobbies.length ? (
-        <select onChange={handleChange}>
+        <select onChange={handleChange} className="select-input">
           <option>Select</option>
           {hobbies.map((hobby, index) => {
             return (
@@ -34,7 +38,7 @@ const SelectOptions = () => {
         </select>
       ) : null}
       {selectedHobby.length ? (
-        <table>
+        <table className="general-table">
           <thead>
             <tr>
               <th>age</th>

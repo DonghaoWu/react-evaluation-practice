@@ -10,8 +10,10 @@ const UsersList = () => {
   }, []);
 
   return (
-    <div>
-      <table>
+    <div className="sub-component">
+      <h1>All Users</h1>
+      <h3>username and age</h3>
+      <table className="general-table">
         <thead>
           <tr>
             <th>name</th>

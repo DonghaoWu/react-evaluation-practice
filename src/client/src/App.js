@@ -4,7 +4,7 @@ import UsersList from './components/UsersList';
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <UsersList />
       <SelectOptions />
     </div>
