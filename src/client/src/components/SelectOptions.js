@@ -12,12 +12,11 @@ const SelectOptions = () => {
 
   const handleChange = async (e) => {
     if (e.target.value === 'Select') return;
+    const res = await axios.post('/users/age', {
+      hobbyToLookup: e.target.value,
+    });
 
-    const hobby = e.target.value;
-    const res = await fetch(`/users/age/${hobby}`);
-    const data = await res.json();
-
-    setSelectedHobby(data);
+    setSelectedHobby(res.data);
   };
 
   return (
