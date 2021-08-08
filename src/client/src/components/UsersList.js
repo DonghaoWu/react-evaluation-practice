@@ -6,7 +6,6 @@ const UsersList = () => {
 
   useEffect(async () => {
     const res = await axios.get('/users');
-    console.log(res.data);
     setUsers(res.data);
   }, []);
 

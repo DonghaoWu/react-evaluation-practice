@@ -35,7 +35,6 @@ const getHobbies = () => {
 
 const getListOfAgesOfUsersWith = (hobby) => {
   const dataAccessMethod = () => {
-    // fill me in :) should return an arry of age count based on hobby.
     let userHobbies = db.hobbiesOfUserByUsername;
     let users = db.usersById;
 
@@ -56,8 +55,6 @@ const getListOfAgesOfUsersWith = (hobby) => {
     for (let key in resInObj) {
       resInArr.push({ age: key, count: resInObj[key] });
     }
-
-    console.log(resInArr);
 
     return resInArr;
   };
