@@ -26,6 +26,16 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    open: true,
+    sockHost: 'http://localhost:8080/',
+    disableHostCheck: true,
+    proxy: {
+      '/': {
+        target: 'http://localhost:3000',
+      },
+    },
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: __dirname + '/public/index.html',
